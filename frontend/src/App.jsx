@@ -18,7 +18,7 @@ function App() {
         const data = await response.json();
         setHealth(data);
       } catch (err) {
-        setError('Could not reach the API: ${err.message}');
+        setError(`Could not reach the API: ${err.message}`);
       } finally {
         setLoading(false);
       }
